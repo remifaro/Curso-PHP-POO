@@ -1,11 +1,7 @@
 <?php
 
-use Remi\Banco\Modelo\Conta\Conta;
-use Remi\Banco\Modelo\Conta\ContaPoupanca;
-use Remi\Banco\Modelo\Conta\ContaCorrente;
-use Remi\Banco\Modelo\Conta\Titular;
-use Remi\Banco\Modelo\CPF;
-use Remi\Banco\Modelo\Endereco;
+use Remi\Banco\Modelo\Conta\{Conta, ContaPoupanca, ContaCorrente, Titular};
+use Remi\Banco\Modelo\{CPF, ENdereco};
 
 require_once 'autoload.php';
 
