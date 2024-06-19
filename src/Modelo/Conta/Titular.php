@@ -2,12 +2,10 @@
 
 namespace Remi\Banco\Modelo\Conta;
 
-use Remi\Banco\Modelo\Pessoa;
-use Remi\Banco\Modelo\CPF;
-use Remi\Banco\Modelo\Endereco;
+use Remi\Banco\Modelo\{Pessoa, CPF, Endereco, Autenticavel};
 
 // Titular é uma pessoa
-class Titular extends Pessoa
+class Titular extends Pessoa implements Autenticavel
 {
     private Endereco $endereco;
 
@@ -20,6 +18,11 @@ class Titular extends Pessoa
     public function recuperaEndereco(): Endereco
     {
         return $this->endereco;
+    }
+
+    public function podeAutenticar(string $senha): bool
+    {
+        return $senha === 'abcd';
     }
 }
 

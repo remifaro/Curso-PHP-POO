@@ -2,7 +2,9 @@
 
 namespace Remi\Banco\Modelo\Funcionario;
 
-class Diretor extends Funcionario
+use Remi\Banco\Modelo\Autenticavel;
+
+class Diretor extends Funcionario implements Autenticavel
 {
     public function calculaBonificacao(): float
     {

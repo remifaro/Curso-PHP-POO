@@ -2,7 +2,7 @@
 
 namespace Remi\Banco\Modelo;
 
-class Pessoa
+abstract class Pessoa
 {
     protected string $nome;
     private CPF $cpf;
